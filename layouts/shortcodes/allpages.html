@@ -1,0 +1,5 @@
+<ul>
+  {{ range (where .Site.Pages "Params.bookHidden" true).ByDate.Reverse | first 50 }}
+  <li>{{ .Date.Format "2006-01-02" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>

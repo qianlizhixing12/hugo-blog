@@ -1,0 +1,21 @@
+baseURL = 'https://qianlizhixing12.github.io/hugo-blog/'
+languageCode = 'zh-cn'
+title = '函关骑牛'
+theme = 'hugo-book'
+
+[params]
+  BookTheme = 'auto'
+  BookSection = 'docs'
+  BookToC = true
+  BookSearch = true
+  BookDateFormat = '2006-01-02'
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = true
+
+[[menu.after]]
+  name = "关于我"
+  url = "/about/"
+  weight = 20

@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="markdown book-article">
+  {{ if not (eq .Date.Year 0001) }}
+  <div class="book-post-date">日期: {{ .Date.Format "2006-01-02" }}</div>
+  {{ end }}
+  {{- .Content -}}
+</article>
+{{ end }}
